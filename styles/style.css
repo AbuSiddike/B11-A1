@@ -211,3 +211,34 @@ ul{
 .kite{
     width: 134px;
 }
+/* form */
+.alt{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.alt input{
+    width: 1032px;
+    padding: 20px 40px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid rgba(14, 14, 14, 0.15);
+    background: #ffffff;
+    border: none;
+}
+/* button donation */
+.up{
+    display: flex;
+    margin: 0 auto;
+    gap: 24px;
+}
+.up button{
+    color: rgba(14, 14, 14, 0.8);
+    padding: 40px;
+    border-radius: 16px;
+    background: #ffffff;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    font-size: 40px;
+    font-weight: 700;
+}
+/* end */
