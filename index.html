@@ -1,88 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-01</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+    <link rel="stylesheet" href="./styles/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header class="kedar">
+<style>
+    .Font{
+        font-family: "Fira Sans", serif;
+    }
+</style>
+<body class="Font max-w-screen-2xl mx-auto">
+    <header>
+        <!----- Navbar ----->
         <nav>
-            <h2 class="bold">Bangladesh 2.0</h2>
-            <button class="btn">Sign in</button>
-        </nav>
-        <div class="top">
-            <div>
-                <h3 style="font-size: 24px; color: #0E0E0E;">Bangldesh 2.0</h3>
-                <p class="bold pot">Idea,innovation,vision and challanges in New Bangladesh.</p>
-                <button class="btn-second">Explore New Bangladesh</button>
+            <div class="navbar bg-base-100 shadow-sm">
+                <div class="navbar-start">
+                  <h1 class="text-2xl">Bangladesh 2.0</h1>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 space-y-4">
+                    <li><a>Home</a></li>
+                    <li><a>Explore</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="blinking-button btn btn-outline btn-success">Sign in</button>
+                </div>
             </div>
-            <div>
-                <img src="./assets/hero.png" alt="">
+        </nav>
+        <div class="xl:mx-36 xl:my-20 p-4 sm:mx-10 sm:my-8 md:mx-20 md:my-16 bg-[url(./../assets/hero.png)] bg-contain bg-no-repeat bg-right-bottom space-y-8">
+            <div class="space-y-4">
+                <h1 class="font-extralight text-2xl">Bangldesh 2.0</h1>
+                <p class="text-6xl font-bold">Idea, Innovation, Vision and <br> challanges in New Bangladesh.</p>
+                <button class="btn btn-active bg-[#006A50] text-white">Explore New Bangladesh</button>
             </div>
         </div>
     </header>
-    <main class="kedar">
-        <!-- pillar of BD -->
-        <section class="column">
-            <h1 class="bold">Pillars of "Bangladesh 2.0"</h1>
-            <div class="column-item">
-                <div class="items">
+    <main>
+        <!----- pillar of BD ----->
+        <section class="xl:mx-36 xl:my-20 p-4 sm:mx-10 sm:my-8 md:mx-20 md:my-16">
+            <h1 class="text-4xl font-bold pb-14">Pillars of "Bangladesh 2.0"</h1>
+            <div class="grid grid-cols-1 justify-items-center lg:grid-cols-2 gap-10 bg-gradient-to-r from-[#0E0E0ECC] to-red-700">
+                <div class="bg-[#C6E4D6] rounded-md p-4">
                     <img src="./assets/card-icon.png" alt="">
-                    <h4 class="told">Innovation</h4>
-                    <p class="tup">Dolor sit amet consectetur elit. Facilis quas, ducimus labore sequi quos</p>
+                    <h4 class="text-2xl">Innovation</h4>
+                    <p class="font-extralight text-xl">Dolor sit amet consectetur elit. Facilis quas, ducimus labore sequi quos</p>
                 </div>
-                <div class="items">
+                <div class="bg-[#C6E4D6] rounded-md p-4">
                     <img src="./assets/card-icon.png" alt="">
-                    <h4 class="told">Sustainability</h4>
-                    <p class="tup">Dolor sit amet consectetur elit. Facilis quas, ducimus labore sequi quos</p>
+                    <h4 class="text-2xl">Sustainability</h4>
+                    <p class="font-extralight text-xl">Dolor sit amet consectetur elit. Facilis quas, ducimus labore sequi quos</p>
                 </div>
-                <div class="items">
+                <div class="bg-[#C6E4D6] rounded-md p-4">
                     <img src="./assets/card-icon.png" alt="">
-                    <h4 class="told">Infrastructure</h4>
-                    <p class="tup">Dolor sit amet consectetur elit. Facilis quas, ducimus labore sequi quos</p>
+                    <h4 class="text-2xl">Infrastructure</h4>
+                    <p class="font-extralight text-xl">Dolor sit amet consectetur elit. Facilis quas, ducimus labore sequi quos</p>
                 </div>
-                <div class="items">
+                <div class="bg-[#C6E4D6] rounded-md p-4">
                     <img src="./assets/card-icon.png" alt="">
-                    <h4 class="told">Empowerment</h4>
-                    <p class="tup">Dolor sit amet consectetur elit. Facilis quas, ducimus labore sequi quos</p>
+                    <h4 class="text-2xl">Empowerment</h4>
+                    <p class="font-extralight text-xl">Dolor sit amet consectetur elit. Facilis quas, ducimus labore sequi quos</p>
                 </div>
             </div>
         </section>
-        <!-- the vision of future -->
-        <section class="column">
+        <!----- the vision of future ----->
+        <section class="xl:mx-36 xl:my-20 p-4 sm:mx-10 sm:my-8 md:mx-20 md:my-16">
             <div>
-                <h1 class="bold">The Vision of Future</h1>
-                <p class="tup">
+                <h1 class="text-4xl font-bold pb-14">The Vision of Future</h1>
+                <p class="text-xl text-wrap">
                     Bangladesh 2.0 aims to redefine the nation's trajectory by embracing cutting-edge technology, 
                     promoting inclusive growth, and ensuring sustainability. With initiatives in renewable energy, 
                     digital transformation, and robust infrastructure, the country is set to become a global model of development.
                 </p>
             </div>
-            <div class="column-item">
-                <div class="tip items">
-                    <img src="./assets/card-icon.png" alt="">
-                    <h4>Digittal Transformation</h4>
-                    <p class="tup">Creating a nationwide digital ecosystem to enhance connectivity and access to service for all citizens.</p>
-                    <a href=""><button class="oe btn-third">Learn More</button></a>
+            <div class="space-x-4 space-y-4 pt-6 pb-6 grid grid-cols-1 lg:grid-cols-3">
+                <div class="bg-[#5490F533] rounded-xl p-3">
+                    <img src="./assets/card-icon.png">
+                    <h4 class="text-xl">Digital Transformation</h4>
+                    <p class="font-extralight text-[16px]">Creating a nationwide digital ecosystem to enhance connectivity and access to service for all citizens.</p>
+                    <button class="btn btn-active btn-info">Learn More</button>
                 </div>
-                <div class="pit items">
-                    <img src="./assets/card-icon.png" alt="">
-                    <h4>Green Energy</h4>
-                    <p class="tup">Investments in solar and wind energy to ensure a sustainable and eco-friendly future.</p>
-                    <a href=""><button class="ki btn-third">Learn More</button></a>
+                <div class="bg-[#C6E4D6] rounded-xl p-3">
+                    <img src="./assets/card-icon.png">
+                    <h4 class="text-xl">Green Energy</h4>
+                    <p class="font-extralight text-[16px]">Investments in solar and wind energy to ensure a sustainable and eco-friendly future.</p>
+                    <button class="btn btn-active btn-success">Learn More</button>
                 </div>
-                <div class="to items">
-                    <img src="./assets/card-icon.png" alt="">
-                    <h4>Modern Infrastructure</h4>
-                    <p class="tup">Building state-of-the-art infrastructure to support economic growth and global competitiveness.</p>
-                    <a href=""><button class="bol btn-third">Learn More</button></a>
+                <div class="bg-[#F7EBCF] rounded-xl p-3">
+                    <img src="./assets/card-icon.png">
+                    <h4 class="text-xl">Modern Infrastructure</h4>
+                    <p class="font-extralight text-[16px]">Building state-of-the-art infrastructure to support economic growth and global competitiveness.</p>
+                    <button class="btn btn-active btn-warning">Learn More</button>
                 </div>
             </div>
-            <div class="iot">
-                <div class="kit">
-                    <p class="tup">
+            <div class="border border-[#0E0E0E26] rounded-xs">
+                <div class="p-3">
+                    <p class="bg-[url(./../assets/quote-bg.png)] bg-no-repeat text-wrap">
                         "Lorem ipsum dolor sit amet consectetur adipiscing elit. Facilis quas, ducimus labore sequi quos 
                         deserunt optio id repellendus tempora veniam amet porro corporis exercitationem numquam debitis 
                         culpa laundantium odio,velit vel minus sit? Veritatis aut maiores ducimus fugit error ex sit, 
@@ -90,197 +109,213 @@
                         quam tenetur rem earum eaque mollitia modi ipsum aspernatur, dignissimos excepturi aliquam architecto
                         soluta necessitatibus vero?"
                     </p>
-                    <h4 style="font-size: 20px; font-weight: 600;">Dr. Muhammad Yunus</h4>
-                    <p class="tup">Chief Adviser of the People's Republic of Bangladesh</p>
+                    <h4 class="text-3xl font-bold pt-4">Dr. Muhammad Yunus</h4>
+                    <p class="text-xl font font-extralight text-emerald-600">Chief Adviser of the People's Republic of Bangladesh</p>
                 </div>
             </div>
         </section>
-        <!-- your opinion matters -->
-        <section class="column">
-            <div>
-                <h1 class="bold">Your Opinion Matters</h1>
-                <div class="table">
-                    <table>
-                        <thead>
-                            <tr class="kill">
-                                <td class="mo">Questions</td>
-                                <td class="no">Select Your Opinion</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td style="font-weight: 600;">Do you believe Bangladesh is on the right path toward becoming a developed nation?</td>
-                                <td><button style="font-weight: 500;" class="lie">Yes, I Agree
-                                    <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <desc>
-                                            Created with Pixso.
-                                    </desc>
-                                    <defs>
-                                        <clipPath id="clip63_21">
-                                            <rect id="Frame" rx="0.000000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
-                                        </clipPath>
-                                    </defs>
-                                    <rect id="Frame" rx="0.000000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
-                                    <g clip-path="url(#clip63_21)">
-                                        <path id="Vector" d="M6 9L12 15L18 9" stroke="#000000" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
-                                    </g>
-                                </svg>
-                                </button></td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: 600;">Do you believe Bangladesh is on the right path toward becoming a developed nation?</td>
-                                <td><button style="font-weight: 500;" class="lie">Yes, I Agree
-                                    <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <desc>
-                                            Created with Pixso.
-                                    </desc>
-                                    <defs>
-                                        <clipPath id="clip63_21">
-                                            <rect id="Frame" rx="0.000000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
-                                        </clipPath>
-                                    </defs>
-                                    <rect id="Frame" rx="0.000000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
-                                    <g clip-path="url(#clip63_21)">
-                                        <path id="Vector" d="M6 9L12 15L18 9" stroke="#000000" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
-                                    </g>
-                                </svg>
-                                </button></td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: 600;">Do you believe Bangladesh is on the right path toward becoming a developed nation?</td>
-                                <td><button style="font-weight: 500;" class="lie">Yes, I Agree
-                                    <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <desc>
-                                            Created with Pixso.
-                                    </desc>
-                                    <defs>
-                                        <clipPath id="clip63_21">
-                                            <rect id="Frame" rx="0.000000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
-                                        </clipPath>
-                                    </defs>
-                                    <rect id="Frame" rx="0.000000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
-                                    <g clip-path="url(#clip63_21)">
-                                        <path id="Vector" d="M6 9L12 15L18 9" stroke="#000000" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
-                                    </g>
-                                </svg>
-                                </button></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+        <!----- your opinion matters ----->
+        <section class="xl:mx-36 xl:my-20 p-4 sm:mx-10 sm:my-8 md:mx-20 md:my-16">
+            <h1 class="text-4xl font-bold pb-14">Your Opinion Matters</h1>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Questions</td>
+                            <td>Select Your Opinion</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-semibold">Do you believe Bangladesh is on the right path toward becoming a developed nation?</td>
+                            <td><button style="font-weight: 500;" class="lie">Yes, I Agree
+                                <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                        Created with Pixso.
+                                </desc>
+                                <defs>
+                                    <clipPath id="clip63_21">
+                                        <rect id="Frame" rx="0.000000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+                                    </clipPath>
+                                </defs>
+                                <rect id="Frame" rx="0.000000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+                                <g clip-path="url(#clip63_21)">
+                                    <path id="Vector" d="M6 9L12 15L18 9" stroke="#000000" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+                                </g>
+                            </svg>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">Do you believe Bangladesh is on the right path toward becoming a developed nation?</td>
+                            <td><button style="font-weight: 500;" class="lie">Yes, I Agree
+                                <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                        Created with Pixso.
+                                </desc>
+                                <defs>
+                                    <clipPath id="clip63_21">
+                                        <rect id="Frame" rx="0.000000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+                                    </clipPath>
+                                </defs>
+                                <rect id="Frame" rx="0.000000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+                                <g clip-path="url(#clip63_21)">
+                                    <path id="Vector" d="M6 9L12 15L18 9" stroke="#000000" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+                                </g>
+                            </svg>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">Do you believe Bangladesh is on the right path toward becoming a developed nation?</td>
+                            <td><button style="font-weight: 500;" class="lie">Yes, I Agree
+                                <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                        Created with Pixso.
+                                </desc>
+                                <defs>
+                                    <clipPath id="clip63_21">
+                                        <rect id="Frame" rx="0.000000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+                                    </clipPath>
+                                </defs>
+                                <rect id="Frame" rx="0.000000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+                                <g clip-path="url(#clip63_21)">
+                                    <path id="Vector" d="M6 9L12 15L18 9" stroke="#000000" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+                                </g>
+                            </svg>
+                            </button></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
-        <!-- recent news -->
-        <section class="column bulma">
+        <!----- recent news ----->
+        <section class="xl:mx-36 xl:my-20 p-4 sm:mx-10 sm:my-8 md:mx-20 md:my-16">
             <div>
-                <h1 class="bold">Recent News</h1>
-                <p class="tup">
-                    Bangladesh 2.0 aims to redefine the nation's trajectory by embracing cutting-edge technology, promoting 
-                    inclusive growth, and ensuring sustainability. With initiatives in renewable energy, digital transformation, 
-                    and robust infrastructure, the country is set to become a global model os development.
-                </p>
-            </div>
-            <div class="column-item error">
-                <div>
-                    <img class="tie" src="./assets/satelite.png" alt="">
-                </div>
-                <div>
-                    <h2 class="kind">Bangladesh Launches New Satelite</h2>
-                    <div class="type">
-                        <img class="kite" src="./assets/al-jazeera.png" alt="">
-                        <div class="time">
-                            <p>Date: 05/01/2025</p>
-                            <p>Time: 10.25 PM</p>
-                        </div>
+                <h1 class="text-4xl font-bold">Recent News</h1>
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full">
+                      <img
+                        src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+                        class="w-full" />
+                      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                      </div>
                     </div>
-                    <p class="tup">
-                        Not until the creation and maintenance of decent conditions of life for all people are recognized and accepted 
-                        as a common obligation of all people and all countries-not untill then shall we, with a certain degree of justification, 
-                        be able to speak of humankind as civilized
-                    </p>
-                    <a href=""><button class="btn-second">Read More</button></a>
-                </div>
-            </div>
-            <div class="column-item error">
-                <div>
-                    <h2 class="kind">Bangladesh Launches New Satelite</h2>
-                    <div class="type">
-                        <img class="kite" src="./assets/al-jazeera.png" alt="">
-                        <div class="time">
-                            <p>Date: 05/01/2025</p>
-                            <p>Time: 10.25 PM</p>
-                        </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                      <img
+                        src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+                        class="w-full" />
+                      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                      </div>
                     </div>
-                    <p class="tup">
-                        Not until the creation and maintenance of decent conditions of life for all people are recognized and accepted 
-                        as a common obligation of all people and all countries-not untill then shall we, with a certain degree of justification, 
-                        be able to speak of humankind as civilized
-                    </p>
-                    <a href=""><button class="btn-second">Read More</button></a>
-                </div>
-                <div>
-                    <img class="tie" src="./assets/satelite.png" alt="">
-                </div>
-            </div>
-            <div class="column-item error">
-                <div>
-                    <img class="tie" src="./assets/satelite.png" alt="">
-                </div>
-                <div>
-                    <h2 class="kind">Bangladesh Launches New Satelite</h2>
-                    <div class="type">
-                        <img class="kite" src="./assets/al-jazeera.png" alt="">
-                        <div class="time">
-                            <p>Date: 05/01/2025</p>
-                            <p>Time: 10.25 PM</p>
-                        </div>
+                    <div id="slide3" class="carousel-item relative w-full">
+                      <img
+                        src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+                        class="w-full" />
+                      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                      </div>
                     </div>
-                    <p class="tup">
-                        Not until the creation and maintenance of decent conditions of life for all people are recognized and accepted 
-                        as a common obligation of all people and all countries-not untill then shall we, with a certain degree of justification, 
-                        be able to speak of humankind as civilized
-                    </p>
-                    <a href=""><button class="btn-second">Read More</button></a>
-                </div>
+                    <div id="slide4" class="carousel-item relative w-full">
+                      <img
+                        src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+                        class="w-full" />
+                      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </section>
-        <!-- donate today & news letter -->
-        <section class="column">
-            <div>
-                <div style="text-align: center;">
-                    <h1 class="bold">Donate Today</h1>
-                    <p style="padding-bottom: 15px;" class="tup">
+        <!----- donate today & news letter ----->
+        <section class="xl:mx-36 xl:my-20 p-4 sm:mx-10 sm:my-8 md:mx-20 md:my-16">
+            <div class="p-3.5 space-y-5 text-center">
+                <div class="text-center">
+                    <h1 class="text-4xl font-bold pb-6">Donate Today</h1>
+                    <p class="text-[16px] text-[#0E0E0EB3] pb-6">
                         Bangladesh 2.0 aims to redefine the nation's trajectory by embracing cutting-edge technology, promoting inclusive growth, and ensuring 
                         sustainability. With initiatives in renewable energy, digital transformation, and robust infrastructure. 
                     </p>
                 </div>
-                    <form class="alt">
-                        <div class="up">
-                            <button>100 Taka</button>
-                            <button style="background: rgb(198, 228, 214);">200 Taka</button>
-                            <button>500 Taka</button>
-                            <button>1000 Taka</button>
-                        </div>
-                        <input type="text" placeholder="Other Amount (Taka)">
-                        <button style="margin: 0 auto;" class="btn-second">Done Now</button>
-                    </form>
+                <div class="hidden lg:flex space-x-3.5 text-center">
+                    <div class="border border-[#0E0E0E26] rounded-md w-60">
+                        <h2 class="text-5xl font-bold">100tk</h2>
+                    </div>
+                    <div class="border border-[#0E0E0E26] bg-[#C6E4D6] rounded-md w-60">
+                        <h2 class="text-5xl font-bold">200tk</h2>
+                    </div>
+                    <div class="border border-[#0E0E0E26] rounded-md w-60">
+                        <h2 class="text-5xl font-bold">500tk</h2>
+                    </div>
+                    <div class="border border-[#0E0E0E26] rounded-md w-60">
+                        <h2 class="text-5xl font-bold">1000tk</h2>
+                    </div>
+                </div>        
+                <input type="text" placeholder="Other Amount (Taka)">
+                <button class="btn btn-active bg-[#006A50] text-white">Done Now</button>
             </div>
-            <div class="oz">
-                <h1 class="bold">Subscribe Newsletter</h1>
+            <div class="text-center pt-6 p-3.5 space-y-5 bg-sky-200 rounded-xl">
+                <h1 class="text-4xl font-bold pb-6">Subscribe Newsletter</h1>
                 <p class="tup">Bangladesh 2.0 aims to redfine the nation's trajectory by embracing cutting-edge technology, promoting inclusive growth</p>
-                <input type="text" placeholder="Enter your email here">
-                <button>Subscribe</button>
+                <div>
+                    <input class="bg-white" type="text" placeholder="Enter your email here">
+                    <button class="btn btn-active bg-[#006A50] text-white">Subscribe</button>
+                </div>
                 <p class="tup">we promise not to spam you!</p>
             </div>
         </section>
     </main>
-    <footer>
-        <h2>Bangladesh 2.0</h2>
-        <ul id="ass">
-            <li><a href=""><img src="./assets/facebook.png" alt=""></a></li>
-            <li><a href=""><img src="./assets/instagram.png" alt=""></a></li>
-            <li><a href=""><img src="./assets/x.png" alt=""></a></li>
-        </ul>
-</footer>
+    <footer class="footer footer-horizontal footer-center bg-linear-to-t from-sky-500 to-indigo-500 text-base-content rounded p-10 ">
+        <h1 class="text-4xl font-bold">Bangladesh 2.0</h1>
+        <nav class="grid grid-flow-col gap-4">
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <div class="grid grid-flow-col gap-4">
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+              </svg>
+            </a>
+          </div>
+        </nav>
+        <aside>
+          <p>Copyright © 2025 - All right reserved by Noob Engineers Ltd</p>
+        </aside>
+    </footer>
 </body>
 </html>

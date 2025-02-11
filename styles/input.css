@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@keyframes blink {
+    0% { background-color: rgb(53, 229, 53); }
+    50% { background-color: white; }
+    100% { background-color: rgb(100, 95, 95); }
+  }
+  
+  .blinking-button {
+    cursor: pointer;
+    animation: blink 3s infinite;
+  }
